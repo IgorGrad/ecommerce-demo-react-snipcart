@@ -11,3 +11,98 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  font-size: 3em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #ff7b54, #ff5c33);
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  padding: 20px;
+  border-bottom: 2px solid #ff7b54;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Basic Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Hover Effect for Product Card */
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Image Styling */
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Product Details Section */
+.product-details {
+  padding: 15px;
+}
+
+/* Product Name Styling */
+.product-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Product Description Styling */
+.product-description {
+  font-size: 0.9em;
+  color: #777;
+  margin: 10px 0;
+}
+
+/* Product Price and Button Container */
+.product-price-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Product Price Styling */
+.product-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ff5c33;
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart-button {
+  background-color: #ff7b54;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #ff5c33;
+}
